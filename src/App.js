@@ -1,23 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import Login from './components/pages/Login';
+import Dashboard from './components/pages/Dashboard';
+import FolderCreation from './components/pages/FolderCreation';
+import Upload from './components/pages/Upload';
+import Display from './components/pages/Display';
+import React from 'react';
+import {Routes, Route, Link} from 'react-router-dom';
+import DocumentList from './components/pages/DocumentList'
+
+function Header(props)
+{
+  return (<h1>Hey. My first component. Name: {props.name}</h1>);
+}
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <--<p>{props.title}</p>!--> */}
+      {/* <Header name="Adina"/>
+      <Header name="AdinaUifi"/>
+      <nav className="nav">
+        <Link to ="/" className="nav-item">Login</Link>
+        <Link to ="/document-list" className="nav-item">Doc List</Link>
+      </nav> */}
+      <Routes>
+        <Route path="/" element={<Login/>}/>
+        <Route path="/dashboard" element = {<Dashboard />}>
+          <Route index element={<FolderCreation/>}/>
+          <Route path="create-folder" element={<FolderCreation/>}/>
+          <Route path="upload" element={<Upload/>}/>
+          <Route path="display" element={<Display/>}/>
+        </Route>
+        <Route path="/document-list" element = {<DocumentList/>}/>
+      </Routes>
     </div>
   );
 }
