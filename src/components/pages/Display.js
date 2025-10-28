@@ -27,7 +27,7 @@ function Display()
     const getBlobContent = (element) =>
     {
         const docId = element.target.innerHTML;
-        axios.get(`http://dms-tnwc.onrender.com/api/fileoperations/download?guid=${docId}`,
+        axios.get(`https://dms-tnwc.onrender.com/api/fileoperations/download?guid=${docId}`,
             {
                 headers:{
                     Authorization : `Bearer ${localStorage.getItem('token')}`,
