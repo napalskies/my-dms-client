@@ -6,13 +6,8 @@ import FolderCreation from './components/pages/FolderCreation';
 import Upload from './components/pages/Upload';
 import Display from './components/pages/Display';
 import React from 'react';
-import {Routes, Route, Link} from 'react-router-dom';
+import {HashRouter as Router, Routes, Route} from 'react-router-dom';
 import DocumentList from './components/pages/DocumentList'
-
-function Header(props)
-{
-  return (<h1>Hey. My first component. Name: {props.name}</h1>);
-}
 
 
 function App() {
