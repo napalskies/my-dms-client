@@ -22,7 +22,7 @@ function Upload()
             console.log(file);
             console.log(folderId);
     
-            await axios.post("http://localhost:5016/api/fileoperations/upload",
+            await axios.post(" http://dms-tnwc.onrender.com/api/fileoperations/upload",
                 formData,
                 {
                     headers: { 

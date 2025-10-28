@@ -11,7 +11,7 @@ function Display()
     
     const handleGetDocuments = async () =>
     {
-        await axios.get(`http://localhost:5016/api/folders/folder?folderId=${folderId}&folderType=1`,
+        await axios.get(` http://dms-tnwc.onrender.com/api/folders/folder?folderId=${folderId}&folderType=1`,
             {
                 headers: { Authorization : `Bearer ${localStorage.getItem('token')}` }
             }
@@ -27,7 +27,7 @@ function Display()
     const getBlobContent = (element) =>
     {
         const docId = element.target.innerHTML;
-        axios.get(`http://localhost:5016/api/fileoperations/download?guid=${docId}`,
+        axios.get(` http://dms-tnwc.onrender.com/api/fileoperations/download?guid=${docId}`,
             {
                 headers:{
                     Authorization : `Bearer ${localStorage.getItem('token')}`,
