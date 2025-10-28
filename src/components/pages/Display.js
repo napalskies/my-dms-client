@@ -11,7 +11,7 @@ function Display()
     
     const handleGetDocuments = async () =>
     {
-        await axios.get(` http://dms-tnwc.onrender.com/api/folders/folder?folderId=${folderId}&folderType=1`,
+        await axios.get(`https://dms-tnwc.onrender.comapi/folders/folder?folderId=${folderId}&folderType=1`,
             {
                 headers: { Authorization : `Bearer ${localStorage.getItem('token')}` }
             }

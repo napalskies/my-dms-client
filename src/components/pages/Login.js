@@ -14,7 +14,7 @@ export default function Login()
     const handleLogin = async () =>
     {
         const response = await axios.post(
-        " http://dms-tnwc.onrender.com/api/authentication/login",
+        "https://dms-tnwc.onrender.com/api/authentication/login",
         {
             username: credentials.username,
             password: credentials.password

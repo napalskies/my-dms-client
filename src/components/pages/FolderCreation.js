@@ -24,7 +24,7 @@ function FolderCreation()
             folderType: folderType.value
         };
 
-        await axios.post(" http://dms-tnwc.onrender.com/api/folders/folder",
+        await axios.post("https://dms-tnwc.onrender.comapi/folders/folder",
             folderDto,
             {
                 headers: { 
