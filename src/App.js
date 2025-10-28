@@ -20,16 +20,18 @@ function App() {
         <Link to ="/" className="nav-item">Login</Link>
         <Link to ="/document-list" className="nav-item">Doc List</Link>
       </nav> */}
-      <Routes>
-        <Route path="/" element={<Login/>}/>
-        <Route path="/dashboard" element = {<Dashboard />}>
-          <Route index element={<FolderCreation/>}/>
-          <Route path="create-folder" element={<FolderCreation/>}/>
-          <Route path="upload" element={<Upload/>}/>
-          <Route path="display" element={<Display/>}/>
-        </Route>
-        <Route path="/document-list" element = {<DocumentList/>}/>
-      </Routes>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/dashboard" element = {<Dashboard />}>
+            <Route index element={<FolderCreation/>}/>
+            <Route path="create-folder" element={<FolderCreation/>}/>
+            <Route path="upload" element={<Upload/>}/>
+            <Route path="display" element={<Display/>}/>
+          </Route>
+          <Route path="/document-list" element = {<DocumentList/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }
