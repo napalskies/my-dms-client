@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-dms-client/static/css/main.d1872c61.css",
-    "main.js": "/my-dms-client/static/js/main.e7c3857c.js",
+    "main.css": "/my-dms-client/static/css/main.96d81069.css",
+    "main.js": "/my-dms-client/static/js/main.17cfea99.js",
     "static/js/453.f47ef6c3.chunk.js": "/my-dms-client/static/js/453.f47ef6c3.chunk.js",
     "static/media/ov_documents_management.png": "/my-dms-client/static/media/ov_documents_management.54e36ed84b63b7a07da0.png",
     "index.html": "/my-dms-client/index.html",
-    "main.d1872c61.css.map": "/my-dms-client/static/css/main.d1872c61.css.map",
-    "main.e7c3857c.js.map": "/my-dms-client/static/js/main.e7c3857c.js.map",
+    "main.96d81069.css.map": "/my-dms-client/static/css/main.96d81069.css.map",
+    "main.17cfea99.js.map": "/my-dms-client/static/js/main.17cfea99.js.map",
     "453.f47ef6c3.chunk.js.map": "/my-dms-client/static/js/453.f47ef6c3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1872c61.css",
-    "static/js/main.e7c3857c.js"
+    "static/css/main.96d81069.css",
+    "static/js/main.17cfea99.js"
   ]
 }
