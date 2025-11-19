@@ -1,13 +1,57 @@
+:root {
+  --bg: #f6f8fc;
+  --bg-elevated: #ffffff;
+  --fg: #0f172a;
+  --muted: #64748b;
+  --primary: #2563eb;
+  --primary-600: #1d4ed8;
+  --border: rgba(15, 23, 42, 0.08);
+  --radius: 12px;
+  --shadow-sm: 0 1px 2px rgba(2, 6, 23, 0.06);
+  --shadow: 0 2px 6px rgba(2, 6, 23, 0.06), 0 12px 24px rgba(2, 6, 23, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: var(--fg);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(99, 102, 241, 0.08), transparent 40%),
+    radial-gradient(800px 400px at 100% 0%, rgba(37, 99, 235, 0.06), transparent 30%),
+    linear-gradient(#f8fafc, #eef2ff);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--primary) 70%, white);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--primary) 15%, white);
 }
